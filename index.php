@@ -38,9 +38,9 @@ body {
 	
 	<form method="POST" action="check.php">
 	<label> Enter username: <br> </label>
-	<input type="text" name ="username" size="20" required> <br/>
+	<input type="text" name ="username"  required> <br/>
 	<label> Enter Password: <br> </label>
-	<input type="password" name="password" size="20" required><br/>
+	<input type="password" name="password"  required><br/>
 	
 	<input id="hv" type="submit" name="signin" value="login">
 	<input id ="hv" type="button" value="cancel"></form>
