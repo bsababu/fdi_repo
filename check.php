@@ -22,7 +22,7 @@ if($chkh == $row['password'])
 	}
 else
 	{
-		echo"invalid password";
+		echo"invalid authentication";
 		require("index.php");
 	}
 
