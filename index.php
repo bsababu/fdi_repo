@@ -46,7 +46,8 @@ body {
 	<input type="password" name="password"  required><br/>
 	
 	<input id="hv" type="submit" name="signin" value="login">
-	<input id ="hv" type="button" value="cancel"></form>
+	<input id ="hv" type="button" value="cancel">
+	<a href="register.php"><input type="button" id="hv" value="Register"></a></form>
 	
 </body>
 </html>
