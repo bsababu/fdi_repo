@@ -1,17 +1,16 @@
-<?php
+<?php/*
 $host="localhost"; // Host name 
-	$username="root"; // Mysql username 
-	$password=""; // Mysql password 
-	$db_name="fdi"; // Database name 
-	$tbl_name="registration"; // Table name
-   $con=mysqli_connect("localhost","root","","fdi");
+	$username="bosco"; // Mysql username 
+	$password="12345"; // Mysql password 
+	$db_name="register"; // Database name 
+	//$tbl_name="registration1"; // Table name
+   $con=pg_connect("host='$host' dbname='$db_name' user='$username' password='$password'")or die("not con");
    //Check connection
-   if (mysqli_connect_error()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-   }
-?> 
+   if ($con)) {
+    echo "connect to MySQL: ";
+   }*/
+?>
 
 <?php
-	
-
+$con=pg_connect("host='localhost' dbname='bosco_db' user='bosco' password='12345'") or die(" not con");
 ?>

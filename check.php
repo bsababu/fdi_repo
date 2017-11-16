@@ -9,11 +9,11 @@ $pas=$_POST['password'];
 for($i=0; $i<1000; $i++) {
 $chkh=hash('sha512', $pas);
 }
-$qry="SELECT * FROM registration WHERE username='$nm' AND password='$chkh'";
+$qry="SELECT * FROM registration1 WHERE username='$nm' AND password='$chkh'";
 
-$result=mysql_query($qry);
+$result=pg_query($qry);
 
- if(mysql_num_rows($result) > 0 )
+ if(pg_num_rows($result) > 0 )
  {
 if($chkh == $row['password'])
 	{
@@ -30,6 +30,6 @@ else
 }
 else {
 
-	mysql_error("invaalid connecting");
+	pg_error("invaalid connecting");
 }
 ?>
